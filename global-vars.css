@@ -1,0 +1,14 @@
+:root{
+    --bg-color:white;
+    --sec-bg-color:#e1f1f6;
+    --main-text-color:#21243D;
+    --primary-color: #FF6464;
+    --secondary-color: #f75e25;
+    --on-hover-text-color: #FF6464;
+    --white-color: white;
+    --black-clor:black;
+    --main-font-family: 'Heebo', sans-serif;
+    --sec-font-family: 'Roboto', sans-serif;
+    --another-font-family: 'Courier New', Courier, monospace;
+    --form-input-color: rgb(237, 237, 237);
+}

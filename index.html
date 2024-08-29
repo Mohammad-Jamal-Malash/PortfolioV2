@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index-style.css" />
+    <link rel="stylesheet" href="pages/home/home-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="animations/social.css" />
+    <link rel="stylesheet" href="animations/navbar-animation.css" />
+    <link rel="stylesheet" href="pages/about/about.css" />
+    <link rel="stylesheet" href="pages/projects/projects.css" />
+    <link rel="stylesheet" href="pages/contact/contact.css" />
+    <link rel="stylesheet" href="global-vars.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" />
+    <link rel="stylesheet" href="sidebar.css" />
+    <title>Mohammad Portfolio V2</title>
+  </head>
+  <body>
+    <nav>
+      <span>
+        &lt;<span class="text">Mohammad</span>&gt;
+      </span>
+      <ul class="sidebar">
+        <li onclick=hideSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+        <li><a href="#home" class="text">Home</a></li>
+        <li><a href="#about" class="text">About</a></li>
+        <li><a href="#projects" class="text">Projects</a></li>
+        <li><a href="#contact" class="text">Contact</a></li>
+      </ul>
+      <ul>
+        <li class="hideOnMobile"><a href="#home" class="text">Home</a></li>
+        <li class="hideOnMobile"><a href="#about" class="text">About</a></li>
+        <li class="hideOnMobile"><a href="#projects" class="text">Projects</a></li>
+        <li class="hideOnMobile"><a href="#contact" class="text">Contact</a></li>
+        <li class="menu-button" onclick=showSidebar()><a ><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+      </ul>
+    </nav>
+
+    <div id="card-container">
+      <div class="card" id="home"></div>
+
+      <div class="card" id="about"></div>
+
+      <div class="card" id="projects"></div>
+
+      <div class="card" id="contact"></div>
+    
+    </div>
+    
+    <div class="footer">
+      <div class="social">
+        <div class="wrapper">
+          <a
+            target="_blank"
+            href="https://www.instagram.com/mohammad_jamal_mj/"
+            class="icon"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/mohammad-jamal-malash-10935325a/"
+            class="icon"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a
+            target="_blank"
+            href="https://youtube.com/@mohammadjamalabumalash7912?si=KfAYj0_RXvTL7BEW"
+            class="icon"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+          <a href="#" class="icon"><i class="fa-brands fa-x-twitter"></i></a>
+          <a
+            target="_blank"
+            href="https://github.com/Mohammad-Jamal-Malash"
+            class="icon"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+        <p class="copyright-text">© Copyright 2024 . Made by Mohammad Malash</p>
+      </div>
+    </div>
+    <!--Script under this-->
+    <script src="script.js"></script>
+  </body>
+</html>

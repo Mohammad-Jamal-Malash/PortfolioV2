@@ -1,0 +1,92 @@
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   align-items: center;
+   background-color: var(--sec-bg-color);
+   padding-bottom: 50px;
+}
+#contact-title{
+    font-size: 3rem;
+    margin: 15px;
+    color: var(--main-text-color);
+    font-family: var(--main-font-family);
+}
+
+.contact-text{
+    font-size: 1.5rem;
+    font-family: var(--sec-font-family);
+    background: linear-gradient(45deg, #7D38B4, #371693, #75B8ED);
+    padding: 10px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.contact-form-container{
+    box-sizing: border-box;
+    background-color: var(--white-color);
+    max-width: 80rem;
+    width: 80%;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px;
+    overflow: auto;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: auto;
+}
+.contact-form-feild{
+    min-width: 90%;
+    max-width: 90%;
+    width: 90%;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    margin: 10px 0;
+    padding: 10px;
+
+}
+.contact-form-input{
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 90%;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.5rem;
+    background-color: var(--form-input-color);
+    resize: none;
+    margin: 10px 0;
+    padding: 10px 0 10px 20px;
+}
+.contact-form-lable{
+    font-size: 1.5rem;
+    font-family: var(--sec-font-family);
+    color: var(--black-clor);
+}
+.contact-form-button{
+    font-family: var(--main-font-family);
+    width: 20%;
+    min-width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    border:none;
+    font-size: 1.5rem;
+    background: var(--primary-color);
+    color: var(--white-color);
+    cursor: pointer;
+    align-self: flex-end;
+    margin-right: 5%; 
+}
+.contact-form-button:hover{
+    background: var(--secondary-color);
+    scale: 1.1;
+    transition: all 0.2s ease;
+}
+#message{
+    min-height: 100px;
+}

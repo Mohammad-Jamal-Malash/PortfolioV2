@@ -1,0 +1,111 @@
+
+#about {
+    display: flex;
+    gap: 10px;
+    box-sizing: border-box;
+    background-color: var(--sec-bg-color);
+}
+.left-dev {
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    gap: 70px;
+    margin: 0 20px;
+    display: flex;
+    width: 50%;
+    min-height: max-content;
+    flex-wrap: wrap;
+}
+
+.phrase {
+    font-size: 2rem;
+    font-family: var(--main-font-family);
+    background: linear-gradient(90deg, black 0%, black 90%, var( --primary-color) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200%;
+    animation: color-slide-left 5s linear infinite;
+    overflow: hidden;
+}
+
+@keyframes color-slide-left {
+    from {
+        background-position: 200% 0%;
+    }
+    to {
+        background-position: 0% 0%;
+    }
+}
+.degree{
+    font-size: 1.5rem;
+    font-family: var(--main-font-family);
+    max-width: 80%;
+}
+.college{
+    font-size:1.6rem;
+    color: var(--primary-color);
+}
+.good-experias{
+    font-size: 1.5rem;
+    width: 80%;
+    text-align: justify;
+}
+.good-experias .phrase{
+    font-size: 1.5rem;
+    font-family: var(--another-font-family);
+}
+.right-dev {
+    box-sizing: border-box;
+    width: 50%;
+    overflow: hidden;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.skills-text{
+    font-size: 2.5rem;
+    align-self: flex-start;
+}
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Space between columns */
+    margin-top: 3%;
+}
+
+
+.skills-list li {
+    font-size: 1.2rem;
+    font-family: var(--main-font-family);
+    background: var(--primary-color);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: text;
+    list-style-type: none;
+    min-width: 30%;
+    color: var(--white-color);
+}
+.skills-list li:hover {
+    background: var(--secondary-color);
+    color: var(--white-color);
+    scale: 1.1;
+    transition: all 0.3s ease;
+}
+
+@media (max-width:700px){
+    #about {
+        column-count: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        box-sizing: border-box;
+    }
+    #about div{
+        width: 95%;
+    }
+}
